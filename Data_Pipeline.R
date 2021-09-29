@@ -6,7 +6,7 @@ library(lubridate)
 library(rvest)
 
 #NCAAF_L1 <- read_csv("https://raw.githubusercontent.com/MattC137/Open_Data/master/Data/Sports/NCAAF/NCAAF_Level_One.csv")
-NCAAF_L1_Teams <- read_csv("https://raw.githubusercontent.com/MattC137/Open_Data/master/Data/Sports/NCAAF/NCAAF_Team_List.csv")
+NCAAF_L1_Teams <- read_csv("https://raw.githubusercontent.com/MattC137/Open_Data/master/Data/Sports/NCAAF/NCAAF_Team_List.csv") #Thanks to MattC137!!
 
 
 ####### DATA PIPELINE #####
