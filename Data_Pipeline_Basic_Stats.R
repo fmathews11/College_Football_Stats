@@ -21,6 +21,7 @@ library(lubridate)
 
 ncaaf <- read_html("https://www.espn.com/college-football/teams")
 
+
 ids <- ncaaf %>% str_extract_all('(?<=college-football/team/_/id/)(.*?)(?=")') %>% unlist()
 ids <- ids[str_detect(ids, "/")]
 ids <- ids %>% str_split("/", simplify = T)
@@ -532,13 +533,13 @@ for(i in 1:nrow(NCAAF_L1)){
   }
 }
 
-NCAAF_L1_Teams %>% filter(FBS == 1) %>% arrange(desc(ELO)) %>% top_n(25)
+NCAAF_L1_Teams %>% filter(FBS == 1) %>% arrange(desc(ELO)) %>% top_n(100)%>%View()
 
 write.csv(NCAAF_L1,'Level_One_With_ELO.csv')
 
 ##### Creating the test set.  Need to change date each week when data pipeline is re-run
 NCAAF_L1_Future$Date <- as.Date(NCAAF_L1_Future$Date, origin = "1970-01-01")
-NCAAF_This_Week <- NCAAF_L1_Future %>% filter(Date > "2021-09-23", Date <= "2021-09-26") %>% 
+NCAAF_This_Week <- NCAAF_L1_Future %>% filter(Date > "2021-09-30", Date <= "2021-10-07") %>% 
   select(Date, Season, Team, Opponent, Home, Neutral_Location, Game_ID)
 
 NCAAF_This_Week <- NCAAF_This_Week %>% 
@@ -555,3 +556,44 @@ NCAAF_This_Week <- NCAAF_This_Week %>% mutate(
 )
 
 write.csv(NCAAF_This_Week,"ThisWeeksGames.csv")
+
+### Using the CFB API to pull in some more stats ###
+data <- NCAAF_L1
+
+advanced_stats_df <- data.frame()
+teamlist <- cfbd_game_info(2021, week = 1)$home_team
+counter <- 1
+for (t in unique(data$Team)){
+  for (s in 2000:2021){
+    print(paste0('Iteration: ',counter,' of 1869'))
+    try(tempdf <- cfbd_stats_season_team(year = s,team = t)%>%
+          select(team,time_of_poss_pg,completion_pct,pass_ypr,int_pct,rush_ypc,turnovers_pg,third_conv_rate,fourth_conv_rate,penalty_yds_pg))
+    tempdf <- tempdf%>%
+      mutate(Team = t)%>%
+      mutate(Season = s)
+    advanced_stats_df <- rbind(advanced_stats_df,tempdf)
+    counter <- counter +1
+    
+  }
+}
+
+fulldata<-inner_join(data,advanced_stats_df, by = c('Team','Season'))
+
+fulldata<-unique(fulldata)
+
+mldata<-fulldata%>%
+  drop_na()%>%
+  mutate(opp_time_of_poss_gm = fulldata$time_of_poss_pg[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_completion_pct = fulldata$completion_pct[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_pass_ypr = fulldata$pass_ypr[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_int_pct =  fulldata$int_pct[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_rush_ypc = fulldata$rush_ypc[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_turnovers_pg = fulldata$turnovers_pg[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_third_conv_rate = fulldata$third_conv_rate[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_fourth_conv_rate = fulldata$fourth_conv_rate[match(Opponent,fulldata$Team)])%>%
+  mutate(opp_penalty_yds_pg = fulldata$penalty_yds_pg[match(Opponent,fulldata$Team)])%>%
+  na.omit()%>%View()
+
+write.csv(mldata,'mldata.csv')  
+
+
