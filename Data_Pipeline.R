@@ -6,7 +6,7 @@ library(lubridate)
 library(rvest)
 
 #NCAAF_L1 <- read_csv("https://raw.githubusercontent.com/MattC137/Open_Data/master/Data/Sports/NCAAF/NCAAF_Level_One.csv")
-NCAAF_L1_Teams <- read_csv("https://raw.githubusercontent.com/MattC137/Open_Data/master/Data/Sports/NCAAF/NCAAF_Team_List.csv") #Thanks to MattC137!!
+NCAAF_L1_Teams <- read_csv("https://raw.githubusercontent.com/MattC137/Open_Data/master/Data/Sports/NCAAF/NCAAF_Team_List.csv")
 
 
 ####### DATA PIPELINE #####
@@ -557,7 +557,6 @@ NCAAF_This_Week <- NCAAF_This_Week %>% mutate(
 
 write.csv(NCAAF_This_Week,"ThisWeeksGames.csv")
 
-### Using the CFB API to pull in some more stats ###
 data <- NCAAF_L1
 
 advanced_stats_df <- data.frame()
@@ -592,8 +591,38 @@ mldata<-fulldata%>%
   mutate(opp_third_conv_rate = fulldata$third_conv_rate[match(Opponent,fulldata$Team)])%>%
   mutate(opp_fourth_conv_rate = fulldata$fourth_conv_rate[match(Opponent,fulldata$Team)])%>%
   mutate(opp_penalty_yds_pg = fulldata$penalty_yds_pg[match(Opponent,fulldata$Team)])%>%
-  na.omit()%>%View()
+  na.omit()
 
 write.csv(mldata,'mldata.csv')  
+
+# Add additional stats to this week's games
+
+df2021 <- advanced_stats_df%>%
+  filter(Season == 2021)
+
+NCAAF_This_Week <- inner_join(NCAAF_This_Week,df2021,by = c("Team","Season"))%>%na.omit()
+
+ref_table <- mldata%>%
+  mutate(Date = as.Date(Date))%>%
+  filter(Date > "2021-09-01")%>%
+  select(Team,time_of_poss_pg,completion_pct,pass_ypr,int_pct,rush_ypc,turnovers_pg,third_conv_rate,
+         fourth_conv_rate,penalty_yds_pg)
+
+
+NCAAF_This_Week <- NCAAF_This_Week%>%
+  mutate(opp_time_of_poss_gm = ref_table$time_of_poss_pg[match(NCAAF_This_Week$Opponent,ref_table$Team)])%>%
+  mutate(opp_completion_pct = ref_table$completion_pct[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_pass_ypr = ref_table$pass_ypr[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_int_pct =  ref_table$int_pct[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_rush_ypc = ref_table$rush_ypc[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_turnovers_pg = ref_table$turnovers_pg[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_third_conv_rate = ref_table$third_conv_rate[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_fourth_conv_rate = ref_table$fourth_conv_rate[match(Opponent,ref_table$Team)])%>%
+  mutate(opp_penalty_yds_pg = ref_table$penalty_yds_pg[match(Opponent,ref_table$Team)])%>%
+  na.omit()
+
+NCAAF_This_Week <- unique(NCAAF_This_Week)
+
+write.csv(NCAAF_This_Week,"ThisWeeksGames.csv")
 
 
