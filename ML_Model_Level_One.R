@@ -12,6 +12,20 @@ Sys.setenv(CFBD_API_KEY = "ZmYrC0A2qVl/S+8M0W0ygbpyMtpTvGYn2lDZexO8WPP5ok0IKvxkY
 
 data <- read.csv('Level_One_With_ELO.csv',stringsAsFactors = TRUE)
 
+NCAAF_L1_Teams <- read.csv('NCAAF_Team_List.csv')
+
+#Matching and Pre-Processing
+thisweeksgames <- read.csv('ThisWeeksGames.csv')
+thisweeksgames$Team_FBS <- NCAAF_L1_Teams$FBS[match(thisweeksgames$Team,NCAAF_L1_Teams$Team)]
+thisweeksgames$Opp_FBS <- NCAAF_L1_Teams$FBS[match(thisweeksgames$Opponent,NCAAF_L1_Teams$Team)]
+thisweeksgames$OT <- 0
+thisweeksgames$Neutral_Location <- ifelse(thisweeksgames$Neutral_Location == TRUE,1,0)
+thisweeksgames$Neutral_Location <- as.factor(thisweeksgames$Neutral_Location)
+thisweeksgames$OT <- as.factor(thisweeksgames$OT)
+thisweeksgames$Team_FBS <- as.factor(thisweeksgames$Team_FBS)
+thisweeksgames$Opp_FBS <- as.factor(thisweeksgames$Opp_FBS)
+
+
 #Converting to proper data types. Pre-pre-processing
 data <- data%>%
   filter(Result != 0.5)%>%
@@ -56,14 +70,14 @@ set.seed(20109)
 xgb_folds <- vfold_cv(data = data_train,v = 10,strata = Result)
   
 xgboost_tune <-
-    tune_race_anova(xgboost_workflow, resamples = xgb_folds, grid = 10,control = control_race(
+    tune_grid(xgboost_workflow, resamples = xgb_folds, grid = 10,control = control_resamples(
       verbose = TRUE,
       allow_par = TRUE),
       metrics = metric_set(roc_auc))
 
 autoplot(xgboost_tune)
 
-plot_race(xgboost_tune)
+#plot_race(xgboost_tune)
   
 xgboost_tune%>%
   show_best()
@@ -90,26 +104,39 @@ preds <- final_fit%>%
 
 caret::confusionMatrix(preds$.pred_class,preds$Result, positive = "1")
 
+raw_xgb <- final_fit%>%
+  extract_fit_engine()
+
 raw_xgb$evaluation_log%>%
-  ggplot(aes(x = iter,y = training_logloss))+
+  ggplot(aes(x = iter,y = training_auc))+
   geom_line(color='hotpink',size = 1.2)+
   labs(x = 'Boosting Iterations',
-       y = 'Model Log-Loss')+
+       y = 'Model AUC')+
   theme_hc()
 
 
 
 
-raw_xgb <- final_fit%>%
-  extract_fit_engine()
-
-xgb.plot.tree(model = raw_xgb,trees = 200)
 
 
-xgb.ggplot.shap.summary(data = as.matrix(juiced[,-5]),model = raw_xgb)
+xgb.plot.tree(model = raw_xgb,trees = 1)
 
-thisweeksgames <- read.csv('ThisWeeksGames.csv')
-thisweeksgames$Team_FBS <- NCAAF_L1_Teams$FBS[match(thisweeksgames$Team,NCAAF_L1_Teams$Team)]
-thisweeksgames$OPP_FBS <- NCAAF_L1_Teams$FBS[match(thisweeksgames$Opponent,NCAAF_L1_Teams$Team)]
 
-cfbd_betting_lines(401282081)
+xgb.ggplot.shap.summary(data = as.matrix(juiced[,-4]),model = raw_xgb)
+
+
+
+fit_workflow <- fit(xgboost_final_wf,data_train)
+
+
+thisweeksgames <- thisweeksgames%>%
+  na.omit()
+
+thisweeksgames$team_predicted_win_probability <-predict(fit_workflow,thisweeksgames%>%na.omit(),type = 'prob')$.pred_0
+
+
+thisweeksgames%>%
+  select(Team,Opponent,Home,team_predicted_win_probability)%>%
+  arrange(-team_predicted_win_probability)%>%
+  View()
+
