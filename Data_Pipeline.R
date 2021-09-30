@@ -444,6 +444,19 @@ NCAAF_Level_One[NCAAF_Level_One$Opponent == "Southern Miss", "Opponent"] <- "Sou
 NCAAF_Level_One[NCAAF_Level_One$Team == "Tarleton", "Team"] <- "Tarleton State"
 NCAAF_Level_One[NCAAF_Level_One$Opponent == "Tarleton", "Opponent"] <- "Tarleton State"
 
+NCAAF_Level_One[NCAAF_Level_One$Team == "CSU Northridge", "Team"] <- "CS-Northridge"
+NCAAF_Level_One[NCAAF_Level_One$Opponent == "CSU Northridge", "Opponent"] <- "CS-Northridge"
+
+NCAAF_Level_One[NCAAF_Level_One$Team == "Nicholls State", "Team"] <- "Nicholls"
+NCAAF_Level_One[NCAAF_Level_One$Opponent == "Nicholls State", "Opponent"] <- "Nicholls"
+
+NCAAF_Level_One[NCAAF_Level_One$Team == "Presbyterian College", "Team"] <- "Presbyterian"
+NCAAF_Level_One[NCAAF_Level_One$Opponent == "Presbyterian College", "Opponent"] <- "Presbyterian"
+
+NCAAF_Level_One[NCAAF_Level_One$Team == "North Carolina Central", "Team"] <- "NC Central"
+NCAAF_Level_One[NCAAF_Level_One$Opponent == "North Carolina Central", "Opponent"] <- "NC Central"
+
+
 NCAAF_Level_One <- NCAAF_Level_One %>% filter(Game_ID != "Postponed", Game_ID != "Canceled", Game_ID != "Live")
 
 write.csv(NCAAF_Level_One, "Level_One.csv", row.names = F)
@@ -555,7 +568,7 @@ NCAAF_This_Week <- NCAAF_This_Week %>% mutate(
   Elo_Difference = ELO - Opp_ELO
 )
 
-write.csv(NCAAF_This_Week,"ThisWeeksGames.csv")
+write.csv(NCAAF_This_Week,"ThisWeeksGames_L1.csv")
 
 data <- NCAAF_L1
 
@@ -593,6 +606,9 @@ mldata<-fulldata%>%
   mutate(opp_penalty_yds_pg = fulldata$penalty_yds_pg[match(Opponent,fulldata$Team)])%>%
   na.omit()
 
+mldata <- mldata%>%
+  select(-team)
+
 write.csv(mldata,'mldata.csv')  
 
 # Add additional stats to this week's games
@@ -622,6 +638,9 @@ NCAAF_This_Week <- NCAAF_This_Week%>%
   na.omit()
 
 NCAAF_This_Week <- unique(NCAAF_This_Week)
+
+NCAAF_This_Week <- NCAAF_This_Week%>%
+  select(-team)
 
 write.csv(NCAAF_This_Week,"ThisWeeksGames.csv")
 
