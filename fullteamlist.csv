@@ -1,0 +1,587 @@
+"","Team","FBS","ELO"
+"1","Boston College",1,1615.19438234269
+"2","Holy Cross",0,1222.45348660543
+"3","Harvard",0,1200
+"4","Northeastern",0,1189.89874350633
+"5","Long Island University",0,1200
+"6","UMass",1,1259.58082677606
+"7","Towson",0,1200
+"8","Arizona",1,1334.07104409479
+"9","Maryland",1,1433.08506081676
+"10","Michigan State",1,1549.34495822896
+"11","Cal Poly",0,1188.54254124582
+"12","Michigan",1,1645.35477894258
+"13","Minnesota",1,1561.72914778341
+"14","Missouri",1,1606.19838509324
+"15","Ole Miss",1,1431.58178803278
+"16","Montana State",0,1190.53803070297
+"17","Montana",0,1256.39366701411
+"18","Duke",1,1462.86476561565
+"19","East Carolina",1,1464.77324148994
+"20","NC State",1,1535.05767627816
+"21","North Carolina",1,1540.82247456003
+"22","Wake Forest",1,1480.59239639837
+"23","North Dakota",0,1194.68948408191
+"24","Nebraska",1,1652.74734441556
+"25","Dartmouth",0,1200
+"26","Sacramento State",0,1171.67056824335
+"27","New Hampshire",0,1232.02709016634
+"28","Princeton",0,1200
+"29","Rutgers",1,1533.49654668832
+"30","New Mexico State",1,1248.92084930342
+"31","New Mexico",1,1375.37807695486
+"32","Columbia",0,1200
+"33","Cornell",0,1200
+"34","Syracuse",1,1528.14502165213
+"35","Bowling Green",1,1198.27943080936
+"36","Miami (OH)",1,1373.02703836059
+"37","Ohio State",1,1755.89975708665
+"38","Ohio",1,1437.0348249646
+"39","Oklahoma State",1,1617.06013610601
+"40","Auburn",1,1658.22123307053
+"41","Abilene Christian",0,1179.14883933469
+"42","Air Force",1,1550.80590143782
+"43","Akron",1,1145.42164093894
+"44","Oklahoma",1,1798.483328309
+"45","Alabama A&M",0,1175.62016528223
+"46","Alabama State",0,1195.72971701174
+"47","Alcorn State",0,1185.80886604906
+"48","Tulsa",1,1424.65365887725
+"49","Appalachian State",1,1641.8465395134
+"50","Arkansas-Pine Bluff",0,1177.5193776996
+"51","Arkansas State",1,1365.219662822
+"52","Oregon State",1,1554.13637316725
+"53","Austin Peay",0,1185.72417909954
+"54","Ball State",1,1404.0897009898
+"55","Bethune-Cookman",0,1188.49322973803
+"56","Bucknell",0,1180.67832301121
+"57","Buffalo",1,1487.62254307749
+"58","Butler",0,1200
+"59","Campbell",0,1168.4604268294
+"60","Canisius",0,1200
+"61","San Diego State",1,1632.54354023452
+"62","Carroll (MT)",0,1200
+"63","Central Arkansas",0,1203.68765896252
+"64","Central Connecticut",0,1179.98006376106
+"65","UCF",1,1561.78539088626
+"66","Central Michigan",1,1394.01760316248
+"67","Charleston Southern",0,1286.44851307564
+"68","Penn State",1,1643.43327346286
+"69","Cincinnati",1,1729.20849006638
+"70","Colgate",0,1172.08869957017
+"71","Davidson",0,1200
+"72","Dayton",0,1200
+"73","Delaware State",0,1213.1576824545
+"74","Temple",1,1438.48006789563
+"75","Drake",0,1200
+"76","Duquesne",0,1189.76860184592
+"77","Penn",0,1200
+"78","East Tenn. St.",0,1175.9623627473
+"79","Eastern Illinois",0,1181.90438682242
+"80","Eastern Kentucky",0,1172.41172761032
+"81","Eastern Michigan",1,1258.02135205559
+"82","Pittsburgh",1,1566.4770066718
+"83","Elon",0,1138.93414285802
+"84","Fairfield",0,1200
+"85","Villanova",0,1223.43256665339
+"86","Florida Atlantic",1,1401.30550559987
+"87","Florida International",1,1393.58972080148
+"88","Fordham",0,1143.13894761612
+"89","Gardner-Webb",0,1156.77823166863
+"90","Georgetown (KY)",0,1200
+"91","Georgia State",1,1339.42611265832
+"92","Brown",0,1200
+"93","Hampton",0,1196.82853922627
+"94","Rhode Island",0,1143.56365209781
+"95","Hofstra",0,1200
+"96","Houston Baptist",0,1200
+"97","Clemson",1,1909.89905080317
+"98","Illinois State",0,1224.99928989916
+"99","Iowa",1,1566.65104783241
+"100","Jackson State",0,1200
+"101","San Jose St",1,1426.39600630663
+"102","Kansas",1,1402.38356637089
+"103","Kansas State",1,1455.16500459839
+"104","Kent State",1,1308.39443591432
+"105","Furman",0,1224.74296850074
+"106","Lamar",0,1198.42209211279
+"107","La Salle",0,1200
+"108","Lehigh",0,1228.09292687816
+"109","South Dakota",0,1226.71882902765
+"110","Liberty",1,1476.70645624064
+"111","Louisiana Tech",1,1359.98671086282
+"112","Memphis",1,1622.89087065293
+"113","Chattanooga",0,1173.82948016815
+"114","Marist",0,1200
+"115","McNeese",0,1228.4989228003
+"116","Vanderbilt",1,1431.66731855073
+"117","Mercer",0,1190.39497465142
+"118","Baylor",1,1590.05783627187
+"119","Miami",1,1601.06882820698
+"120","Middle Tennessee",1,1403.07831013752
+"121","Stanford",1,1741.88854433798
+"122","Mississippi Valley State",0,1190.65255480745
+"123","Monmouth",0,1178.0761274873
+"124","Morehead State",0,1166.40402317848
+"125","Morgan State",0,1082.97363185169
+"126","Rice",1,1389.28591218879
+"127","Navy",1,1435.11889212974
+"128","NC Central",0,1213.91854343726
+"129","Charlotte",1,1382.90670141948
+"130","UL Monroe",1,1219.41050763664
+"131","UNLV",1,1275.91600570107
+"132","Nevada",1,1525.30148891257
+"133","Nicholls",0,1195.77584852263
+"134","North Carolina A&T",0,1223.1157547746
+"135","North Dakota State",0,1293.56941070844
+"136","Texas A&M",1,1622.80681834113
+"137","Norfolk State",0,1188.68670311056
+"138","North Alabama",0,1197.02521855101
+"139","Northern Colorado",0,1200
+"140","Northern Illinois",1,1432.81594392744
+"141","Northern Iowa",0,1219.72373436981
+"142","CS-Northridge",0,1193.96081771155
+"143","Northern Arizona",0,1147.22503382366
+"144","Northwestern State",0,1182.25956152504
+"145","Houston",1,1450.57700073452
+"146","Oregon",1,1643.58948781124
+"147","North Texas",1,1286.01814085287
+"148","California",1,1528.13886079935
+"149","Portland State",0,1167.57760226088
+"150","Prairie View",0,1200
+"151","Presbyterian",0,1158.54283164486
+"152","Purdue",1,1567.54257753401
+"153","Texas",1,1576.12099561239
+"154","BYU",1,1702.95533330109
+"155","Robert Morris",0,1180.25858338004
+"156","Sacred Heart",0,1200
+"157","Southern Utah",0,1163.28779837611
+"158","Sam Houston State",0,1162.79453143371
+"159","Samford",0,1169.98829136303
+"160","Utah",1,1663.24581475023
+"161","SE Louisiana",0,1200
+"162","Southeast Missouri State",0,1135.66880313089
+"163","James Madison",0,1278.95830489448
+"164","Siena",0,1200
+"165","SMU",1,1408.08137015796
+"166","South Carolina State",0,1147.38382959238
+"167","Richmond",0,1213.96731193219
+"168","South Dakota State",0,1200
+"169","Southern Mississippi",1,1399.44055781522
+"170","South Carolina",1,1597.92195850058
+"171","Virginia",1,1500.07226734494
+"172","Southern",0,1200
+"173","Virginia Tech",1,1585.98367218335
+"174","St. Cloud State",0,1200
+"175","St Francis (PA)",0,1200
+"176","St. John's",0,1200
+"177","UCLA",1,1605.3291597326
+"178","St. Mary's (CA)",0,1200
+"179","Stephen F Austin",0,1177.7486105121
+"180","Stony Brook",0,1207.21947056966
+"181","Missouri State",0,1175.08897941512
+"182","Tarleton State",0,1200
+"183","TCU",1,1751.77855145139
+"184","Tennessee-Martin",0,1149.81553320896
+"185","Tennessee",1,1502.1173072703
+"186","Tennessee State",0,1195.66653309215
+"187","Tennessee Tech",0,1170.22849952738
+"188","UT San Antonio",1,1399.19633187352
+"189","UTEP",1,1232.99538887447
+"190","Washington",1,1650.74687998113
+"191","Texas Southern",0,1186.85501110428
+"192","Texas Tech",1,1553.47830763992
+"193","Citadel",0,1254.75009678109
+"194","Toledo",1,1508.427180238
+"195","Washington State",1,1462.53208597244
+"196","Troy",1,1403.41644928048
+"197","Tulane",1,1389.60861989396
+"198","Valparaiso",0,1200
+"199","Virginia Military Institute",0,1082.82957177504
+"200","Wagner",0,1181.78957258476
+"201","Weber State",0,1179.03249841686
+"202","Montana-Western",0,1200
+"203","Western Illinois",0,1205.95358613664
+"204","Western Michigan",1,1462.63707667512
+"205","Western Carolina",0,1131.61139513484
+"206","William & Mary",0,1193.91778484744
+"207","Wofford",0,1262.13272518441
+"208","Wisconsin",1,1672.92121336153
+"209","Wyoming",1,1446.67703093781
+"210","Youngstown State",0,1195.12433247406
+"211","Grambling",0,1185.64247908908
+"212","Marshall",1,1449.8256579314
+"213","West Virginia",1,1718.48574124673
+"214","Merrimack",0,1200
+"215","Fresno State",1,1512.59513270457
+"216","Bryant",0,1168.70866910236
+"217","Indiana State",0,1218.56777622656
+"218","Georgia Southern",1,1402.36032152043
+"219","Incarnate Word",0,1200
+"220","Jacksonville",0,1190.60070622526
+"221","Old Dominion",1,1412.85466445271
+"222","USC",1,1772.46666728417
+"223","San Diego",0,1200
+"224","UC Davis",0,1184.89890177403
+"225","Idaho State",0,1171.03297998426
+"226","Louisiana",1,1440.83109406147
+"227","Dixie State",0,1200
+"228","Maine",0,1227.56840711373
+"229","Iona",0,1200
+"230","Lafayette",0,1167.13498544272
+"231","Coastal Carolina",1,1454.24712167728
+"232","Texas State",1,1319.96376231747
+"233","Utah State",1,1398.4605230932
+"234","Eastern Washington",0,1174.5982687733
+"235","Alabama",1,2049.79321115437
+"236","Kennesaw State",0,1192.75353497565
+"237","Mississippi State",1,1528.88602675529
+"238","Army",1,1569.52430223278
+"239","Illinois",1,1557.67688341993
+"240","Colorado State",1,1307.6807706412
+"241","Colorado",1,1405.51318745464
+"242","Albany",0,1197.42466065169
+"243","Connecticut",1,1349.94929652832
+"244","Yale",0,1222.22247782547
+"245","Georgetown",0,1200
+"246","Howard",0,1158.59451647869
+"247","Delaware",0,1195.7140181485
+"248","UAB",1,1463.62557217543
+"249","Florida A&M",0,1187.25728354578
+"250","Florida State",1,1652.12529019629
+"251","Florida Tech",0,1200
+"252","Jacksonville State",0,1223.11390837667
+"253","Stetson",0,1200
+"254","Montana State-Northern",0,1200
+"255","Florida",1,1652.9501071372
+"256","South Florida",1,1510.40034782563
+"257","Georgia Tech",1,1561.13434007111
+"258","South Alabama",1,1421.82055939482
+"259","Georgia",1,1851.63590795845
+"260","Hawai'i",1,1437.31526594876
+"261","Iowa State",1,1518.72104807135
+"262","Boise State",1,1643.97083311961
+"263","Idaho",0,1142.23043373552
+"264","Northwestern",1,1483.19549694406
+"265","Southern Illinois",0,1172.90396528172
+"266","Arkansas",1,1481.62304442148
+"267","Indiana",1,1515.65760411246
+"268","Notre Dame",1,1704.18483463708
+"269","Arizona State",1,1607.02926257126
+"270","Murray State",0,1166.43726873167
+"271","Kentucky",1,1532.09922505683
+"272","Louisville",1,1569.83763389479
+"273","Western Kentucky",1,1489.89219012788
+"274","LSU",1,1785.14630469572
+"275","Adams State",0,1200
+"276","Albany State (GA)",0,1200
+"277","Albion",0,1200
+"278","Alderson-Broaddus",0,1200
+"279","Allen",0,1200
+"280","American International",0,1200
+"281","Angelo State",0,1200
+"282","Apprentice School",0,1200
+"283","Arizona Christian",0,1200
+"284","Arkansas-Monticello",0,1200
+"285","Arkansas Tech",0,1200
+"286","Assumption",0,1200
+"287","Augustana (SD)",0,1200
+"288","Augustana University (SD)",0,1200
+"289","Aurora",0,1200
+"290","Ave Maria",0,1200
+"291","Azusa Pacific",0,1200
+"292","Bacone College",0,1200
+"293","Baker University",0,1200
+"294","Belhaven University",0,1200
+"295","Bemidji State",0,1200
+"296","Benedict College",0,1200
+"297","Bentley",0,1200
+"298","Berry College",0,1200
+"299","Bethany (KS)",0,1200
+"300","Bethel (TN)",0,1200
+"301","Birmingham-Southern",0,1200
+"302","Black Hills State",0,1200
+"303","Bloomsburg",0,1200
+"304","Bluefield College",0,1200
+"305","Bowie State",0,1200
+"306","Brevard College",0,1200
+"307","Buffalo State",0,1200
+"308","California (PA)",0,1200
+"309","Campbellsville",0,1200
+"310","Carnegie Mellon",0,1200
+"311","Carson-Newman",0,1200
+"312","Carthage",0,1200
+"313","Catawba",0,1200
+"314","Catholic University",0,1200
+"315","Central Methodist",0,1200
+"316","Central Missouri State",0,1200
+"317","Central Oklahoma",0,1200
+"318","Central State",0,1200
+"319","Central State (OH)",0,1200
+"320","Central Washington",0,1200
+"321","Centre",0,1200
+"322","Chadron State",0,1200
+"323","Chapman University",0,1200
+"324","Charleston (WV)",0,1200
+"325","Cheyney",0,1200
+"326","Chowan",0,1200
+"327","Clarion",0,1200
+"328","Clark Atlanta",0,1200
+"329","College of Faith",0,1200
+"330","College of Faith - Charlotte",0,1200
+"331","College of Idaho",0,1200
+"332","College of New Jersey",0,1200
+"333","Colorado Mesa",0,1200
+"334","Colorado Mines",0,1200
+"335","Colorado School of Mines",0,1200
+"336","Colorado State-Pueblo",0,1200
+"337","Concord",0,1200
+"338","Concordia-St. Paul",0,1200
+"339","Concordia (AL)",0,1200
+"340","Concordia (WI)",0,1200
+"341","Concordia College (MI)",0,1200
+"342","Culver-Stockton",0,1200
+"343","Cumberland",0,1200
+"344","Cumberland College",0,1200
+"345","Delaware Valley",0,1200
+"346","Delta State",0,1200
+"347","Doane College",0,1200
+"348","East Central",0,1200
+"349","East Stroudsburg",0,1200
+"350","Eastern New Mexico",0,1200
+"351","Eastern Oregon",0,1200
+"352","Edinboro",0,1200
+"353","Edward Waters",0,1200
+"354","Elizabeth City State",0,1200
+"355","Emory & Henry",0,1200
+"356","Emporia State",0,1200
+"357","Evangel",0,1200
+"358","Fairmont State",0,1200
+"359","Faulkner",0,1200
+"360","Fayetteville State",0,1200
+"361","Ferris State",0,1200
+"362","Findlay",0,1200
+"363","Fort Lewis",0,1200
+"364","Fort Valley State",0,1200
+"365","Franklin",0,1200
+"366","Franklin Pierce",0,1200
+"367","Frostburg State",0,1200
+"368","Gannon",0,1200
+"369","Geneva College",0,1200
+"370","Glenville State",0,1200
+"371","Grand Valley State",0,1200
+"372","Grand View",0,1200
+"373","Greensboro College",0,1200
+"374","Guilford",0,1200
+"375","Hampden-Sydney",0,1200
+"376","Hanover",0,1200
+"377","Harding",0,1200
+"378","Hartwick",0,1200
+"379","Henderson State",0,1200
+"380","Hillsdale",0,1200
+"381","Hope",0,1200
+"382","Humboldt State",0,1200
+"383","Huntingdon",0,1200
+"384","Husson",0,1200
+"385","Indiana Wesleyan",0,1200
+"386","Indianapolis",0,1200
+"387","Iowa Wesleyan",0,1200
+"388","Johnson C Smith",0,1200
+"389","Johnson Smith",0,1200
+"390","Kalamazoo",0,1200
+"391","Kean University",0,1200
+"392","Kentucky Christian",0,1200
+"393","Kentucky State",0,1200
+"394","Kentucky Wesleyan",0,1200
+"395","La Verne",0,1200
+"396","Lambuth",0,1200
+"397","Lane",0,1200
+"398","Lane College",0,1200
+"399","Langston",0,1200
+"400","Lenoir-Rhyne",0,1200
+"401","Limestone",0,1200
+"402","Lincoln (MO)",0,1200
+"403","Lincoln (PA)",0,1200
+"404","Lindenwood",0,1200
+"405","Lindsey Wilson",0,1200
+"406","Linfield",0,1200
+"407","LIU Post",0,1200
+"408","Livingstone",0,1200
+"409","Lock Haven",0,1200
+"410","Louisiana College",0,1200
+"411","Lynchburg",0,1200
+"412","Malone",0,1200
+"413","Mansfield",0,1200
+"414","Marian",0,1200
+"415","Mars Hill",0,1200
+"416","Maryville TN",0,1200
+"417","Mayville State",0,1200
+"418","McDaniel College",0,1200
+"419","McKendree",0,1200
+"420","McMurry",0,1200
+"421","Menlo",0,1200
+"422","Menlo College",0,1200
+"423","Mercyhurst",0,1200
+"424","Methodist",0,1200
+"425","Mid-America Nazarene",0,1200
+"426","Midwestern State",0,1200
+"427","Miles",0,1200
+"428","Miles College",0,1200
+"429","Millersville",0,1200
+"430","Millersville University",0,1200
+"431","Millsaps",0,1200
+"432","Minnesota-Crookston",0,1200
+"433","Minnesota-Duluth",0,1200
+"434","Minnesota St-Moorhead",0,1200
+"435","Minnesota State",0,1200
+"436","Minot State",0,1200
+"437","Mississippi College",0,1200
+"438","Missouri Baptist",0,1200
+"439","Missouri S&T",0,1200
+"440","Missouri Western",0,1200
+"441","Montana Tech",0,1200
+"442","Montclair State",0,1200
+"443","Monterrey Tech",0,1200
+"444","Morehouse",0,1200
+"445","Morehouse College",0,1200
+"446","Morris Brown",0,1200
+"447","Mount St. Joseph",0,1200
+"448","NC Wesleyan",0,1200
+"449","Nebraska-Kearney",0,1200
+"450","Nebraska-Omaha",0,1200
+"451","New Haven",0,1200
+"452","New Mexico Highlands",0,1200
+"453","Newberry",0,1200
+"454","North Greenville",0,1200
+"455","Northeastern State",0,1200
+"456","Northern Michigan",0,1200
+"457","Northern State",0,1200
+"458","Northwest Missouri State",0,1200
+"459","Northwestern Oklahoma State",0,1200
+"460","Notre Dame College",0,1200
+"461","Ohio Dominican",0,1200
+"462","Ohio Northern",0,1200
+"463","OK Panhandle St",0,1200
+"464","Oklahoma Baptist",0,1200
+"465","Oklahoma Panhandle State",0,1200
+"466","Ouachita Baptist",0,1200
+"467","Pace",0,1200
+"468","Paul Quinn",0,1200
+"469","Pikeville",0,1200
+"470","Pittsburg State",0,1200
+"471","Point University",0,1200
+"472","Quincy",0,1200
+"473","Randolph-Macon",0,1200
+"474","Redlands",0,1200
+"475","Reinhardt",0,1200
+"476","Rhodes",0,1200
+"477","Rhodes College",0,1200
+"478","Rocky Mountain",0,1200
+"479","Rowan",0,1200
+"480","Salve Regina",0,1200
+"481","Savannah State",0,1200
+"482","Shaw",0,1200
+"483","Shepherd",0,1200
+"484","Shippensburg",0,1200
+"485","Shorter",0,1200
+"486","Simon Fraser",0,1200
+"487","Sioux Falls",0,1200
+"488","Slippery Rock",0,1200
+"489","South Dakota Mines",0,1200
+"490","Southeastern Oklahoma",0,1200
+"491","Southern Arkansas",0,1200
+"492","Southern Connecticut State",0,1200
+"493","Southern Oregon",0,1200
+"494","Southern Virginia",0,1200
+"495","Southwest Baptist",0,1200
+"496","Southwest Minnesota State",0,1200
+"497","Southwestern Assemblies of God",0,1200
+"498","Southwestern College",0,1200
+"499","Southwestern Oklahoma",0,1200
+"500","St. Ambrose",0,1200
+"501","St. Andrews",0,1200
+"502","St. Anselm",0,1200
+"503","St. Augustine's",0,1200
+"504","St. Francis (IL)",0,1200
+"505","St. Francis (IN)",0,1200
+"506","St. Joseph's (IN)",0,1200
+"507","St. Paul's College",0,1200
+"508","St. Peter's",0,1200
+"509","St. Xavier (IL)",0,1200
+"510","Stillman",0,1200
+"511","Stonehill",0,1200
+"512","Stonehill College",0,1200
+"513","SUNY Maritime",0,1200
+"514","Taylor",0,1200
+"515","TBD",0,1200
+"516","Texas A&M-Commerce",0,1200
+"517","Texas A&M-Kingsville",0,1200
+"518","Texas College",0,1200
+"519","Texas Lutheran",0,1200
+"520","Texas Wesleyan",0,1200
+"521","Tiffin",0,1200
+"522","Tiffin University",0,1200
+"523","Trinity International (IL)",0,1200
+"524","Truman State",0,1200
+"525","Tusculum",0,1200
+"526","Tuskegee",0,1200
+"527","UNC Pembroke",0,1200
+"528","Union College",0,1200
+"529","University of Faith",0,1200
+"530","University of Mary",0,1200
+"531","University of Texas of the Permian Basin",0,1200
+"532","Upper Iowa",0,1200
+"533","Urbana",0,1200
+"534","Ursinus",0,1200
+"535","Ursinus College",0,1200
+"536","UVA-Wise",0,1200
+"537","UVA Wise",0,1200
+"538","UW-Oshkosh",0,1200
+"539","UW-Whitewater",0,1200
+"540","Valdosta State",0,1200
+"541","Virginia-Wise",0,1200
+"542","Virginia Lynchburg",0,1200
+"543","Virginia State",0,1200
+"544","Virginia Union",0,1200
+"545","Waldorf",0,1200
+"546","Walsh",0,1200
+"547","Warner",0,1200
+"548","Washburn",0,1200
+"549","Wayland Baptist",0,1200
+"550","Wayne State (MI)",0,1200
+"551","Wayne State (NE)",0,1200
+"552","Webber International",0,1200
+"553","Wesley College",0,1200
+"554","West Alabama",0,1200
+"555","West Chester",0,1200
+"556","West Florida",0,1200
+"557","West Georgia",0,1200
+"558","West Liberty",0,1200
+"559","West Texas A&M",0,1200
+"560","West Virginia State",0,1200
+"561","West Virginia Tech",0,1200
+"562","West Virginia Wesleyan",0,1200
+"563","Western Colorado",0,1200
+"564","Western Connecticut State",0,1200
+"565","Western New England",0,1200
+"566","Western New Mexico",0,1200
+"567","Western Oregon",0,1200
+"568","Western State",0,1200
+"569","Western State Colorado",0,1200
+"570","Western Washington",0,1200
+"571","Willamette",0,1200
+"572","William Jewell College",0,1200
+"573","William Penn",0,1200
+"574","Wingate",0,1200
+"575","Winona State",0,1200
+"576","Winston-Salem",0,1200
+"577","Wisconsin-Eau Claire",0,1200
+"578","Wisconsin-La Crosse",0,1200
+"579","Wisconsin-Platteville",0,1200
+"580","Wisconsin-Stevens Point",0,1200
+"581","Wisconsin Lutheran",0,1200
+"582","Wittenberg",0,1200
+"583","Wittenberg University",0,1200
+"584","Worcester Polytechnic",0,1200
+"585","WV State",0,1200
+"586","WV Wesleyan",0,1200
